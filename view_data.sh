@@ -1,0 +1,1 @@
+nfdump -r ${1} -o extended
