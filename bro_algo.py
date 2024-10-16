@@ -41,7 +41,7 @@ def run_bro(threshold,netflow_data):
     return blocked_hosts
 
 def main():
-    threshold = 5
+    threshold = 10
     netflow_data = pd.read_csv('netflow.csv').to_dict('records')
     blocked_hosts = run_bro(threshold,netflow_data)
     print("Blocked hosts: ", blocked_hosts)
