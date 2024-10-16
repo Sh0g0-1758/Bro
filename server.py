@@ -42,6 +42,7 @@ def log_tcp_packet(pkt):
 
             with open('data.txt', 'a') as f:
                 f.write(f"{src_ip} {src_port} {dst_ip} {dst_port} {flags}\n")
+                f.flush()
 
             print(f"Logged TCP request: {src_ip}:{src_port} -> {dst_ip}:{dst_port}, Flags: {flags}")
 
